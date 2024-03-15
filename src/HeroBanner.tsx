@@ -93,9 +93,10 @@ export const HeroBanner = ({
 
   const textColor = brandingColor
     ? getContrastColor(brandingColor) === "black"
-      ? "text-flathub-dark-gunmetal"
-      : "text-flathub-lotion"
-    : "text-flathub-dark-gunmetal dark:text-flathub-lotion";
+      ? "text-[rgb(36,31,49)]"
+      : "text-[rgb(250,250,250)]"
+    : "text-[rgb(36,31,49)] dark:text-[rgb(250,250,250)]";
+
   return (
     //@ts-ignore
     <swiper-container init={false} ref={swiperRef}>
