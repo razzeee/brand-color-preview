@@ -23,7 +23,12 @@ const BannerPreview = ({
   mode: "Dark" | "Light";
 }) => {
   return (
-    <div className="space-y-4">
+    <div
+      className={clsx(
+        "space-y-4 p-4",
+        mode === "Dark" ? "bg-black text-white" : "bg-white"
+      )}
+    >
       <div className="flex flex-col gap-2">
         <label
           className="font-semibold"
@@ -82,8 +87,8 @@ function App() {
 </branding>`;
 
   return (
-    <div className={clsx("p-4 space-y-4")}>
-      <div className="flex flex-col gap-2">
+    <div className="h-screen flex flex-col">
+      <div className="p-4 flex flex-col gap-2">
         <div className="flex flex-col">
           <label className="font-semibold" htmlFor="name">
             Name
@@ -183,14 +188,14 @@ function App() {
         mode="Dark"
       />
 
-      <div className="flex flex-col items-center justify-center w-full">
-        <span className="prose">
+      <div className="bg-black flex flex-col items-center justify-center w-full h-full">
+        <span className="prose prose-invert">
           Done by{" "}
           <a href="https://osna.social/@razze" target="_blank" rel="noreferrer">
             @razze
           </a>
         </span>
-        <span className="prose">
+        <span className="prose prose-invert">
           Source at{" "}
           <a
             href="https://github.com/razzeee/brand-color-preview"
