@@ -124,7 +124,7 @@ function App() {
                 type="file"
                 id="logo"
                 name="logo"
-                accept="image/png"
+                accept="image/png, image/svg+xml"
                 onChange={(e) => handleLogoChange(e)}
               />
             </div>
