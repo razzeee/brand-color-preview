@@ -120,7 +120,7 @@ function App() {
           />
         </div>
 
-        <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col md:flex-row gap-3">
           <div className="flex flex-col space-y-4">
             <div className="flex flex-col">
               <label className="font-semibold" htmlFor="logo">
